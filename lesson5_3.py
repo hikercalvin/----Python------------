@@ -1,10 +1,13 @@
 import random
 
+#文件變數，使用範圍是整份文件
+min = 1
+max = 100
+count = 0
+random_value = random.randint(min,max)
+
 if __name__ == "__main__":
-    min = 1
-    max = 100
-    count = 0
-    random_value = random.randint(min,max)
+
     print("=============猜數字遊戲=================")
     while True:
         count += 1
