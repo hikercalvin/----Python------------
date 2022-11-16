@@ -1,6 +1,7 @@
 import random
 
-#文件變數，使用範圍是整份文件
+#文件變數，使用範圍是整份文件所有的地方
+#命名空間(namespace)
 min = 1
 max = 100
 count = 0
@@ -28,3 +29,4 @@ if __name__ == "__main__":
             print("超出範圍")
 
     print("遊戲結束")
+print(keyin)
