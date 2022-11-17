@@ -1,15 +1,12 @@
 import random
-
-#文件變數，使用範圍是整份文件所有的地方
-#命名空間(namespace)
-min = 1
-max = 100
-count = 0
-random_value = random.randint(min,max)
-
-if __name__ == "__main__":
-
+def play_game():
+    min = 1
+    max = 100
+    count = 0
+    random_value = random.randint(min,max)
+    print(random_value)
     print("=============猜數字遊戲=================")
+
     while True:
         count += 1
         keyin = int(input(f"猜數字的範圍{min}~{max}:"))
@@ -29,4 +26,6 @@ if __name__ == "__main__":
             print("超出範圍")
 
     print("遊戲結束")
-print(keyin)
+
+if __name__ == "__main__":
+    play_game()
